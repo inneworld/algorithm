@@ -6,6 +6,8 @@ def dfs(graph,v,visited):
     for i in graph[v]:
         if not visited[i]:
             dfs(graph,i,visited)
+
+    #해당 노드와 연결된 애들 표현 (1번에 인접한건 2,3,8 이런식으로)
 graph = [
     [],
     [2,3,8],
